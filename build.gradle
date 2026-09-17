@@ -1,11 +1,14 @@
 plugins {
     id 'java-library'
     id 'org.jetbrains.kotlin.jvm' version "${kotlin_version}"
+    id 'maven-publish'
 }
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(java_version)
 }
+
+def mavenRepoDir = file("${rootDir}/../resources/maven")
 
 repositories {
     mavenCentral()
@@ -19,4 +22,21 @@ dependencies {
     compileOnly("org.jetbrains:annotations:24.1.0")
 
     implementation("com.electronwill.night-config:core:${nightconfig_version}")
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = 'dev.wren'
+            artifactId = 'ravenconfig'
+            version = project.version
+        }
+    }
+    repositories {
+        maven {
+            name = "whimsyresources"
+            url = uri(mavenRepoDir)
+        }
+    }
 }
