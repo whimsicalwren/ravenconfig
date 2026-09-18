@@ -18,7 +18,7 @@ repositories {
 dependencies {
     implementation("fuzs.forgeconfigapiport:forgeconfigapiport-common-neoforgeapi:${fcap_version}") { transitive = false }
 
-    api("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
     compileOnly("org.jetbrains:annotations:24.1.0")
 
     implementation("com.electronwill.night-config:core:${nightconfig_version}")
