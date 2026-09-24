@@ -5,5 +5,5 @@ enum class OnInvalid {
     RESET,
     CLAMP,
     IGNORE,
-    THROW
+    ERROR
 }
