@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "ravenconfig",
+  "version": "1.0.1",
+  "name": "RavenConfig",
+  "description": "small utility config system for my mods",
+  "authors": [ "wren" ],
+  "contact": {
+    "sources": "https://github.com/whimsicalwren/ravenconfig",
+    "issues": "https://github.com/whimsicalwren/ravenconfig/issues"
+  },
+  "icon": "ravenconfig.png",
+  "license": "MIT",
+  "environment": "*"
+}
+  

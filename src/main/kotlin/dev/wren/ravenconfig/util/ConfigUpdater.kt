@@ -1,11 +1,9 @@
 package dev.wren.ravenconfig.util
 
 import com.electronwill.nightconfig.core.CommentedConfig
-import dev.wren.ravenconfig.model.ConfigCategory
-import dev.wren.ravenconfig.model.ConfigEntry
 import dev.wren.ravenconfig.model.ConfigModel
-import dev.wren.ravenconfig.model.ConfigModelCategory
-import dev.wren.ravenconfig.model.ConfigModelEntry
+import dev.wren.ravenconfig.model.category.ConfigModelCategory
+import dev.wren.ravenconfig.model.entry.ConfigModelEntry
 import net.neoforged.neoforge.common.ModConfigSpec
 import java.util.EnumMap
 

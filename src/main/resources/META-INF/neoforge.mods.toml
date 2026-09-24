@@ -1,0 +1,13 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5,)" # i don't think version here really matters but idk
+license = "MIT"
+issueTrackerURL = "https://github.com/whimsicalwren/ravenconfig/issues"
+
+[[mods]]
+    modId = "ravenconfig"
+    version = "1.0.1"
+    displayName = "RavenConfig"
+    displayURL = "https://github.com/whimsicalwren/ravenconfig"
+    logoFile = "ravenconfig.png"
+    authors = "wren"
+    description = '''small utlity config system for my mods'''
