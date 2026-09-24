@@ -28,4 +28,12 @@ object RangeOpsRegistry {
     fun <T : Comparable<T>> get(tClass: Class<T>): RangeOps<T>? {
         return ops[tClass] as? RangeOps<T>
     }
+
+    @Suppress("UNCHECKED_CAST")
+    fun <T : Comparable<T>> getOrThrow(type: Class<*>): RangeOps<T> {
+        require(ops.containsKey(type)) { "No RangeOps for ${type.name}!"}
+        return ops[type] as RangeOps<T>
+    }
+
+    fun contains(key: Class<*>): Boolean = ops.containsKey(key)
 }
